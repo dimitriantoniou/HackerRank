@@ -76,5 +76,25 @@ function factorial(n){
     // Print the area of the circle:
     console.log (PI*r*r);
     // Print the perimeter of the circle:
-    console.log(2*PI*r)
-    try {
+    console.log(2*PI*r);
+
+//Day 2:
+
+function getGrade(score) {
+    let grade = 0
+    // Write your code here
+    if (score <=30 && score >25){
+        grade = 'A';
+    }else if (score >20 && score <=25){
+        grade = 'B';
+    }else if(score >15 && score <= 20){
+        grade= 'C';
+    }else if (score>10 && score <=15){
+        grade = 'D';
+    }else if (score>5 && score <=10){
+        grade = 'E';
+    }else if (score <=5){
+        grade = 'F'
+    }
+    return grade;
+}
