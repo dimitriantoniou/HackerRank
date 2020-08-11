@@ -28,3 +28,53 @@ function performOperation(secondInteger, secondDecimal, secondString) {
     // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line. The        variable 'firstString' must be printed first.
     console.log(firstString + secondString);
 }
+
+//Day 1
+/**
+ *   Calculate the area of a rectangle.
+ *
+ *   length: The length of the rectangle.
+ *   width: The width of the rectangle.
+ *
+ *	Return a number denoting the rectangle's area.
+ **/
+function getArea(length, width) {
+    let area = (length*width);
+    // Write your code here
+
+    return area;
+}
+
+/**
+ *   Calculate the perimeter of a rectangle.
+ *
+ *	length: The length of the rectangle.
+ *   width: The width of the rectangle.
+ *
+ *	Return a number denoting the perimeter of a rectangle.
+ **/
+function getPerimeter(length, width) {
+    let perimeter = (length*2 + width*2);
+    // Write your code here
+
+    return perimeter;
+}
+
+/*
+ * Create the function factorial here
+ */
+function factorial(n){
+    return (n != 1) ? n * factorial(n - 1) : 1;
+    if (n!=1){
+        return n*facftorial(n-1);
+    }
+}
+
+    // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
+    const PI = Math.PI;
+    let r = readLine();
+    // Print the area of the circle:
+    console.log (PI*r*r);
+    // Print the perimeter of the circle:
+    console.log(2*PI*r)
+    try {
