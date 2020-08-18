@@ -98,3 +98,36 @@ function getGrade(score) {
     }
     return grade;
 }
+
+function getLetter(s) {
+    let letter;
+    switch (true) {
+        case 'aeiou'.includes(s[0]):
+            letter = 'A';
+            break;
+        case 'bcdfg'.includes(s[0]):
+            letter = 'B';
+            break;
+        case 'hjklm'.includes(s[0]):
+            letter = 'C';
+            break;
+        case 'npqrstvwxyz'.includes(s[0]):
+            letter = 'D';
+            break;
+    }
+    return letter;
+}
+
+function vowelsAndConsonants(s) {
+    const vowels = 'aeiou';
+    var consonants = '';
+    for (var i =0; i<s.length;i++){
+        if (vowels.includes(s[i])){
+            console.log(s[i]);
+        }
+        else{
+            consonants += s[i] + '\n';
+        }
+    }
+    console.log(consonants.trim());
+}
