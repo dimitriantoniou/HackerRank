@@ -131,3 +131,12 @@ function vowelsAndConsonants(s) {
     }
     console.log(consonants.trim());
 }
+
+//Day 3
+function getSecondLargest(nums) {
+    // Complete the function
+    var newArray = [...new Set(nums)];
+    newArray.sort((a,b) => b-a);
+    return newArray[1];
+}
+
