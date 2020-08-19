@@ -140,3 +140,27 @@ function getSecondLargest(nums) {
     return newArray[1];
 }
 
+function reverseString(s) {
+
+    //if exception, print exception message
+    //print s; if exception, original string; if no exception, reverse string
+    try {
+        s = s.split("").reverse().join("");
+    } catch(e) {
+        console.log(e.message);
+    } finally {
+        console.log(s);
+    }
+}
+
+function isPositive(a) {
+    if (a>0){
+        return "YES";
+    }
+    else if (a===0){
+        throw Error ("Zero Error");
+    }
+    else if (a<0){
+        throw Error ("Negative Error");
+    }
+}
